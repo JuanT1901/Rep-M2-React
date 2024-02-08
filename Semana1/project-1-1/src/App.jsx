@@ -1,5 +1,6 @@
 import './App.css'
-import CardShow from './components/CardShow';
+import Card from './components/Card';
+// import CardShow from './components/CardShow';
 
 function App() {
 
@@ -20,8 +21,32 @@ function App() {
         <li><b>Pelicula favorita:</b> {movie}</li>
         <li><b>Música favorita:</b> {music}</li>
       </ul>
+
+      <Card
+        title = 'Hobbies'
+        item1 = 'Música'
+        item2 = 'Videojuegos'
+        item3 = 'Peliculas'
+        bgColor = 'blue'
+      />
+
+      <Card
+        title = 'Mi comida Favorita'
+        item1 = 'Hamburguesa'
+        item2 = 'Carne en Goulash'
+        item3 = 'Pizza'
+        bgColor = 'red'
+      />
+
+      <Card
+        title = 'Mi stack tech'
+        item1 = 'HTML'
+        item2 = 'CSS'
+        item3 = 'React'
+        bgColor = 'green'
+      />
       
-      <CardShow 
+      {/* <CardShow 
         showImg = 'https://ichef.bbci.co.uk/news/800/cpsprodpb/15665/production/_107435678_perro1.jpg'
         name = 'Perro'
         bgColor = 'blue'
@@ -37,7 +62,7 @@ function App() {
         showImg = 'https://concepto.de/wp-content/uploads/2021/07/caballos-e1626738224231.jpg'
         name = 'Caballo'
         bgColor = 'olivedrab' 
-      />
+      /> */}
     </div>
   )
 }
